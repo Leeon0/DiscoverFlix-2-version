@@ -1,0 +1,157 @@
+/**
+ * CSS animations for scrolling effects.
+ */
+
+/* Animation for elements with the class 'showAnimate' */
+.showAnimate {
+    view-timeline-name: --presentacion;
+    view-timeline-axis: block;
+    animation-timeline: --presentacion;
+    animation-name: scroll;
+    animation-range: entry 0% cover 40%;
+    animation-fill-mode: both;
+}
+
+/* Animation for elements with the class 'imgScroll' */
+.imgScroll {
+    view-timeline-name: --imagen2;
+    view-timeline-axis: block;
+    animation-timeline: --imagen2;
+    animation-name: scroll-img;
+    animation-range: entry exit;
+    animation-fill-mode: both;
+}
+
+/* Animation for elements with the class 'imgScroll2' */
+.imgScroll2 {
+    view-timeline-name: --imagen;
+    view-timeline-axis: block;
+    animation-timeline: --imagen;
+    animation-name: scroll-img2;
+    animation-range: entry 20% cover 30%;
+    animation-fill-mode: both;
+}
+
+/* Animation for elements with the class 'letterScroll' */
+.letterScroll {
+    view-timeline-name: --top;
+    view-timeline-axis: block;
+    animation-timeline: --top;
+    animation-name: scroll-top;
+    animation-range: entry -100% cover 50%;
+    animation-fill-mode: both;
+}
+
+/* Animation for elements with the class 'letterScroll2' */
+.letterScroll2 {
+    view-timeline-name: --top2;
+    view-timeline-axis: block;
+    animation-timeline: --top2;
+    animation-name: scroll-top2;
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+}
+
+/* Animation for elements with the class 'RevisaTodoNuestroCatalogo' */
+.RevisaTodoNuestroCatalogo {
+    view-timeline-name: --michi;
+    view-timeline-axis: block;
+    animation-timeline: --michi;
+    animation-name: scroll-michi;
+    animation-range: entry 90% cover 60%;
+    animation-fill-mode: both;
+}
+
+/* Animation for elements with the class 'scroll-parallax' */
+.scroll-parallax {
+    view-timeline-name: --parallax;
+    view-timeline-axis: block;
+    animation-timeline: --parallax;
+    animation-name: scroll-parallax;
+    animation-range: entry exit;
+    animation-fill-mode: both;
+}
+
+/* Keyframes for the 'scroll-parallax' animation */
+@keyframes scroll-parallax {
+    from {
+        transform: translate(0, 0%);
+    }
+    to {
+        transform: translate(0, -50%);
+    }
+}
+
+/* Keyframes for the 'scroll-michi' animation */
+@keyframes scroll-michi {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for the 'scroll-top2' animation */
+@keyframes scroll-top2 {
+    from {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for the 'scroll-top' animation */
+@keyframes scroll-top {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for the 'scroll-img' animation */
+@keyframes scroll-img {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for the 'scroll-img2' animation */
+@keyframes scroll-img2 {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for the 'scroll' animation */
+@keyframes scroll {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

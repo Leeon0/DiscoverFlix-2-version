@@ -1,0 +1,76 @@
+/**
+ * Tailwind CSS base, components, and utilities.
+ */
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+ 
+ /**
+  * Custom CSS variables and styles.
+  */
+ :root {
+   --width-scroll: 8px; /* Custom variable for scrollbar width */
+ }
+ 
+ /**
+  * Smooth scrolling behavior for HTML element.
+  */
+ html {
+   scroll-behavior: smooth;
+ }
+ 
+ /**
+  * Global styles for the body element.
+  */
+ body {
+   color: whitesmoke; /* Text color */
+   background: black; /* Background color */
+   scrollbar-gutter: stable; /* Ensure scrollbar doesn't affect layout */
+ }
+ 
+ /**
+  * Media query for adjusting scroll width on smaller screens.
+  */
+ @media (max-width: 768px) and (min-height: 900px) {
+   /* Adjusting width to accommodate scrollbar */
+   .scrollMove {
+     width: calc(100vw - (var(--width-scroll)));
+   }
+ }
+ 
+ /**
+  * Styles to disable scrolling on the body element.
+  */
+ body.disable-scroll {
+   overflow: hidden; /* Hide overflow to disable scrolling */
+ }
+ 
+ /**
+  * Styles for customizing the appearance of the scrollbar.
+  */
+ ::-webkit-scrollbar {
+   width: var(--width-scroll); /* Set width of scrollbar */
+ }
+ 
+ /**
+  * Styles for scrollbar thumb (the draggable part of the scrollbar).
+  */
+ ::-webkit-scrollbar-thumb {
+   background-color: #4c4c4c; /* Background color of scrollbar thumb */
+   border-radius: 3px; /* Border radius of scrollbar thumb */
+ }
+ 
+ /**
+  * Styles for hiding the scrollbar on elements with class 'carrusel'.
+  */
+ .carrusel {
+   scrollbar-width: none; /* Hide scrollbar on Firefox */
+   -ms-overflow-style: none; /* Hide scrollbar on IE/Edge */
+ }
+ 
+ /**
+  * Styles for hiding the scrollbar on elements with class 'carrusel' in WebKit browsers.
+  */
+ .carrusel::-webkit-scrollbar {
+   display: none; /* Hide scrollbar in WebKit browsers */
+ }
