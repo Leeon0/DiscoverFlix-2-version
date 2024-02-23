@@ -1,10 +1,5 @@
 ## Features
 
-- Intuitive Browsing:** The application offers an easy-to-navigate interface, allowing users to quickly find essential details about movies.
-- **Exceptional Design:** The application features an exceptional design that highlights information effectively.Repository:
-
-## Features
-
 - Intuitive Browsing:** The application offers an easy-to-navigate interface, allowing users to quickly find essential movie details.
 - **Exceptional Design:** The application features an exceptional design that effectively highlights information.
 
